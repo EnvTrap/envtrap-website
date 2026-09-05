@@ -4,24 +4,20 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return [
       {
-        source: "/_mintlify/:path*",
-        destination: "https://envtrap.mintlifysite.com/_mintlify/:path*",
-      },
-      {
-        source: "/api/request",
-        destination: "https://envtrap.mintlifysite.com/_mintlify/api/request",
-      },
-      {
         source: "/docs",
-        destination: "https://envtrap.mintlifysite.com/docs",
+        destination: "https://envtrap.mintlify.app/introduction",
       },
       {
         source: "/docs/:path*",
-        destination: "https://envtrap.mintlifysite.com/docs/:path*",
+        destination: "https://envtrap.mintlify.app/:path*",
+      },
+      {
+        source: "/_mintlify/:path*",
+        destination: "https://envtrap.mintlify.app/_mintlify/:path*",
       },
       {
         source: "/mintlify-assets/:path*",
-        destination: "https://envtrap.mintlifysite.com/mintlify-assets/:path*",
+        destination: "https://envtrap.mintlify.app/mintlify-assets/:path*",
       },
     ];
   },
