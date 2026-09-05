@@ -1,0 +1,24 @@
+{
+  "rewrites": [
+    {
+      "source": "/_mintlify/:path*",
+      "destination": "https://envtrap.mintlifysite.com/_mintlify/:path*"
+    },
+    {
+      "source": "/api/request",
+      "destination": "https://envtrap.mintlifysite.com/_mintlify/api/request"
+    },
+    {
+      "source": "/docs",
+      "destination": "https://envtrap.mintlifysite.com/docs"
+    },
+    {
+      "source": "/docs/:match*",
+      "destination": "https://envtrap.mintlifysite.com/docs/:match*"
+    },
+    {
+      "source": "/mintlify-assets/:path+",
+      "destination": "https://envtrap.mintlifysite.com/mintlify-assets/:path+"
+    }
+  ]
+}
