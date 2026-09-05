@@ -136,9 +136,6 @@ export default function Home() {
 
         {/* ── HERO ────────────────────────────────────────────────────────── */}
         <section className="space-y-5">
-          <div className="text-xs font-mono text-muted-foreground">
-            Node.js &ge;18 &bull; Zero External Dependencies &bull; Pure In-Process Runtime
-          </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-foreground leading-tight">
             Runtime secret leak prevention for Node.js
           </h1>

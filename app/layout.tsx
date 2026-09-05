@@ -34,7 +34,7 @@ export default function RootLayout({
       className={`${roboto.variable} ${jetbrainsMono.variable} h-full antialiased`}
       style={{ colorScheme: "light" }}
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground selection:bg-primary/10 selection:text-primary">
+      <body className="min-h-full flex flex-col bg-background text-foreground selection:bg-zinc-800 selection:text-white">
         <SmoothScroll>
           {children}
         </SmoothScroll>
