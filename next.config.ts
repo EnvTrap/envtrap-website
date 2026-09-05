@@ -4,20 +4,32 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return [
       {
-        source: "/docs",
-        destination: "https://envtrap.mintlify.app/introduction",
+        source: "/.well-known/vercel/:path*",
+        destination: "https://envtrap.mintlifysite.com/.well-known/vercel/:path*",
       },
       {
-        source: "/docs/:path*",
-        destination: "https://envtrap.mintlify.app/:path*",
+        source: "/.well-known/acme-challenge/:path*",
+        destination: "https://envtrap.mintlifysite.com/.well-known/acme-challenge/:path*",
       },
       {
         source: "/_mintlify/:path*",
-        destination: "https://envtrap.mintlify.app/_mintlify/:path*",
+        destination: "https://envtrap.mintlifysite.com/_mintlify/:path*",
+      },
+      {
+        source: "/api/request",
+        destination: "https://envtrap.mintlifysite.com/_mintlify/api/request",
+      },
+      {
+        source: "/docs",
+        destination: "https://envtrap.mintlifysite.com/docs",
+      },
+      {
+        source: "/docs/:path*",
+        destination: "https://envtrap.mintlifysite.com/docs/:path*",
       },
       {
         source: "/mintlify-assets/:path*",
-        destination: "https://envtrap.mintlify.app/mintlify-assets/:path*",
+        destination: "https://envtrap.mintlifysite.com/mintlify-assets/:path*",
       },
     ];
   },
