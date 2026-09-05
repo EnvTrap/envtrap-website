@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Copy, Check } from "lucide-react";
 
 const GITHUB_URL = "https://github.com/EnvTrap/envtrap-package";
-const DOCS_URL = "https://github.com/EnvTrap/envtrap-package#readme";
+const DOCS_URL = "/docs";
 
 function CopyButton({ text }: { text: string }) {
   const [copied, setCopied] = useState(false);
